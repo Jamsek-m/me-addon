@@ -6,7 +6,7 @@
 		}
 	},
 	"name": "METimeDisplay",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Displays all times on ME in your local time format.",
 	"icons": {
 		"48": "icons/icon-48.png"
