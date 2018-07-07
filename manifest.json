@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"applications": {
+		"gecko": {
+			"id": "metimedisplay@mjamsek.com"
+		}
+	},
+	"name": "METimeDisplay",
+	"version": "1.0.0",
+	"description": "Displays all times on ME in your local time format.",
+	"icons": {
+		"48": "icons/icon-48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.medieval-europe.eu/*"],
+			"js": ["skripta.js"]
+		}
+	]
+}
