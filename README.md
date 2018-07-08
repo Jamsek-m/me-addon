@@ -29,6 +29,12 @@ List of known bugs:
 
 You can report bugs [here](https://github.com/Jamsek-m/me-time-display/issues)
 
+## Contribute
+
+See the [contributing docs](https://github.com/Jamsek-m/me-time-display/blob/master/CONTRIBUTING.md)
+
+When submitting an issue, please follow the [guidelines](https://github.com/Jamsek-m/me-time-display/blob/master/CONTRIBUTING.md#bugs).
+
 ## License
 
 MIT
