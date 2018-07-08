@@ -26,7 +26,8 @@
     "EndOfActionService": false,
     "MainTimeDisplayService": false,
     "StoreChangedDataService": false,
-    "ChangeDatesService": false
+    "ChangeDatesService": false,
+    "BlacklistService": false
   },
   "extends": "eslint:recommended",
   "rules": {

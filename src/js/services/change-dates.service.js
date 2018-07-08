@@ -9,7 +9,7 @@ class ChangeDatesService {
      * Changes and displays all dates on page.
      */
     static display () {
-        if (!ChangeDatesService._pageIsBlacklisted()) {
+        if (!BlacklistService.pageIsBlacklisted()) {
             ChangeDatesService.changeAllTableData();
             ChangeDatesService.changeDateWhenReadingMessages();
         }
@@ -27,23 +27,10 @@ class ChangeDatesService {
      * Changes displayed date when reading messages
      */
     static changeDateWhenReadingMessages () {
-        const dateFieldOnReadMessagePage = document.querySelector("#content div[style='float:right']");
+        const dateFieldOnReadMessagePage = document.querySelector(ChangeDatesService._QUERY_FLOATING_DATE);
         if (dateFieldOnReadMessagePage) {
             ChangeDatesService._calculateAndReplaceAllDates(dateFieldOnReadMessagePage);
         }
-    }
-
-    /**
-     * @return {boolean}
-     * @private
-     */
-    static _pageIsBlacklisted () {
-        const url = window.location.href;
-        const matches = BLACKLISTED_URLS.filter(item => {
-            return url.includes(item);
-        });
-        console.log("filtered: ", matches);
-        return matches.length > 0;
     }
 
     /**
@@ -95,6 +82,10 @@ class ChangeDatesService {
      */
     static get _QUERY_TD_ELEMS () {
         return "#content td";
+    }
+
+    static get _QUERY_FLOATING_DATE () {
+        return "#content div[style='float:right']";
     }
 
 }

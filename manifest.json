@@ -25,6 +25,7 @@
         "src/js/utils/string.util.js",
         "src/js/utils/date.util.js",
 
+        "src/js/services/blacklist.service.js",
         "src/js/services/store-changed-data.service.js",
         "src/js/services/end-of-action.service.js",
         "src/js/services/main-time-display.service.js",
