@@ -195,7 +195,7 @@ const enableOrDisableTimeDisplay = () => {
 
 // entry point
 offset = setOffset();
-addCSSToPage();
+// addCSSToPage();
 // addToggleCheckboxToPage();
 changeMainTimeDisplay();
 changeAllTableDataElements();
