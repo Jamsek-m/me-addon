@@ -6,6 +6,27 @@
   "env": {
     "browser": true
   },
+  "globals": {
+    // constants
+    "DATE_PATTERN": false,
+    "NEWLINE_PATTERN": false,
+    "ENABLE_EXTENSION_ID": false,
+    "OFFSET_GMT_2": false,
+    "CSS_CLASS_NOT_FOUND": false,
+    "CSS_CLASS_FIND_ALL": false,
+    "ELEM_ATTR_PREFIX": false,
+    // functions
+    "padNumberWithZero": false,
+    "getDefaultTimezone": false,
+    // classes
+    "NumbersUtil": false,
+    "DateObject": false,
+    "StringUtil": false,
+    "EndOfActionService": false,
+    "MainTimeDisplayService": false,
+    "StoreChangedDataService": false,
+    "ChangeDatesService": false
+  },
   "extends": "eslint:recommended",
   "rules": {
     "indent": [

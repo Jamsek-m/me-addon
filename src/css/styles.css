@@ -1,0 +1,10 @@
+/************** All styles must begin with 'metimedisplay' **************/
+/**************      to avoid clash with page styles.      **************/
+
+.metimedisplay-not-found {
+    font-weight: bold;
+    color: yellow;
+}
+.metimedisplay-find-all {
+
+}

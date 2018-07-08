@@ -6,7 +6,7 @@
     }
   },
   "name": "METimeDisplay",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Displays all times on ME in your local time format.",
   "icons": {
     "48": "icons/icon-48.png"
@@ -17,11 +17,23 @@
         "*://*.medieval-europe.eu/*"
       ],
       "js": [
-        "src/js/constants.js",
-        "src/js/skripta.js"
+        // constants
+        "src/js/env/constants.js",
+        "src/js/env/timezone.js",
+        // utils and helpers
+        "src/js/utils/numbers.util.js",
+        "src/js/utils/string.util.js",
+        "src/js/utils/date.util.js",
+        // services
+        "src/js/services/store-changed-data.service.js",
+        "src/js/services/end-of-action.service.js",
+        "src/js/services/main-time-display.service.js",
+        "src/js/services/change-dates.service.js",
+        // main
+        "src/js/index.js"
       ],
       "css": [
-        "src/css/stili.css"
+        "src/css/styles.css"
       ]
     }
   ]
