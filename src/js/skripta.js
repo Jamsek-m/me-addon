@@ -2,9 +2,7 @@
 let offset = 0;
 
 // constants
-const DATE_PATTERN = /(\d{2}-[A-Z][a-z]{2}-\d{4}, \d{2}:\d{2}:\d{2})/g;
-const NEWLINE_PATTERN = /\r?\n|\r/g;
-const ENABLE_EXTENSION_ID = "enable_extension";
+
 
 // util functions
 const addCSSToPage = () => {

@@ -17,6 +17,7 @@
         "*://*.medieval-europe.eu/*"
       ],
       "js": [
+        "src/js/constants.js",
         "src/js/skripta.js"
       ],
       "css": [
