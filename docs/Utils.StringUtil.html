@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Global</title>
+	<title>Documentation Class: StringUtil</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,21 +33,14 @@
 			<li class="dropdown">
 				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="MyNamespace.html">MyNamespace</a></li>
+					<li><a href="Env.html">Env</a></li><li><a href="Services.html">Services</a></li><li><a href="Utils.html">Utils</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="MyNamespace.DateObject.html">MyNamespace.DateObject</a></li><li><a href="MyNamespace.MonthUtil.html">MyNamespace.MonthUtil</a></li>
-				</ul>
-			</li>
-			
-			<li class="dropdown">
-				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="global.html#padNumberWithZero">padNumberWithZero</a></li>
+					<li><a href="Services.ChangeDatesService.html">Services.ChangeDatesService</a></li><li><a href="Services.EndOfActionService.html">Services.EndOfActionService</a></li><li><a href="Services.MainTimeDisplayService.html">Services.MainTimeDisplayService</a></li><li><a href="Services.StoreChangedDataService.html">Services.StoreChangedDataService</a></li><li><a href="Utils.DateObject.html">Utils.DateObject</a></li><li><a href="Utils.MonthUtil.html">Utils.MonthUtil</a></li><li><a href="Utils.NumbersUtil.html">Utils.NumbersUtil</a></li><li><a href="Utils.StringUtil.html">Utils.StringUtil</a></li>
 				</ul>
 			</li>
 			
@@ -79,14 +72,18 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Global</h1>
+	<h1 class="page-title">Class: StringUtil</h1>
 <section>
 
 <header>
     
         <h2>
+            <span class="ancestors"><a href="Utils.html">Utils</a>.</span>
         
+        StringUtil
         </h2>
+        
+            <div class="class-description">Class for string manipulation</div>
         
     
 </header>
@@ -96,8 +93,74 @@
     <div class="container-overview">
     
         
+<hr>
+<dt>
+    <h4 class="name" id="StringUtil"><span class="type-signature"></span>new StringUtil(str)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
 
         
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">String to be worked on</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
 <dl class="details">
     
 
@@ -137,7 +200,21 @@
 </dl>
 
 
-        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
     
     </div>
 
@@ -160,7 +237,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="padNumberWithZero"><span class="type-signature"></span>padNumberWithZero(number)</h4>
+    <h4 class="name" id="cleanupString"><span class="type-signature"></span>cleanupString()</h4>
     
     
 </dt>
@@ -168,7 +245,105 @@
 
     
     <div class="description">
-        Pads number to represent date format
+        Trims string and removes all breaklines and tabulators
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">StringUtil</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="containsPattern"><span class="type-signature"></span>containsPattern(pat)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Tests whether given pattern is present in string
     </div>
     
 
@@ -203,13 +378,13 @@
 
         <tr>
             
-                <td class="name"><code>number</code></td>
+                <td class="name"><code>pat</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">string</span>
 
 
 
@@ -220,7 +395,155 @@
 
             
 
-            <td class="description last">Number to be padded.</td>
+            <td class="description last">Regular expression to be tested</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="extractPattern"><span class="type-signature"></span>extractPattern(pat)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Extracts pattern from string
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Regular expression to be tested</td>
         </tr>
 
     
@@ -304,6 +627,256 @@
     
 </dd>
 
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getString"><span class="type-signature"></span>getString()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns string that was worked on
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="replacePattern"><span class="type-signature"></span>replacePattern(pat, newValue)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Replaces pattern in string with given value
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>newValue</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
         </dl>
     
 
@@ -354,7 +927,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-07-08T12:04:40+02:00
+		on 2018-07-08T17:29:08+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
