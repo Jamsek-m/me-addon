@@ -1,12 +1,12 @@
 /* exported BlacklistService */
 /**
- * Service that provides information in blacklisted pages
+ * Service that provides information on blacklisted pages
  * @memberOf Services
  */
 class BlacklistService {
 
     /**
-     * Returns <tt>true</tt> if page is blacklisted.
+     * Returns <tt>true</tt> if page is blacklisted, <tt>false</tt> otherwise.
      * @return {boolean}
      */
     static pageIsBlacklisted() {
@@ -16,6 +16,5 @@ class BlacklistService {
         });
         return matches.length > 0;
     }
-
 
 }

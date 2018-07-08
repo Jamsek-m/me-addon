@@ -16,12 +16,9 @@
     }
     console.log("Not yet implemented!");
 };*/
+// addToggleCheckboxToPage();
 
 // entry point
-// addToggleCheckboxToPage();
-/*console.log("Server time: ", document.getElementById("jclock").innerText);
-console.log("Your time: ", DateObject.fromDate(new Date()).toString());*/
-
 MainTimeDisplayService.display();
 ChangeDatesService.display();
 EndOfActionService.display();

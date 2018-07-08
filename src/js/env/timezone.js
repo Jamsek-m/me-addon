@@ -1,6 +1,6 @@
 /* exported getDefaultTimezone */
 /**
- * Returns offset
+ * Returns default offset
  * @memberOf Env
  * @return {number}
  */

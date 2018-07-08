@@ -1,4 +1,4 @@
 /**
- * Services with logic
+ * Services with application logic
  * @namespace Services
  */

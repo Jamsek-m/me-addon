@@ -6,7 +6,7 @@
 class ChangeDatesService {
 
     /**
-     * Changes and displays all dates on page.
+     * Changes and displays all dates on a page.
      */
     static display () {
         if (!BlacklistService.pageIsBlacklisted()) {
@@ -84,6 +84,10 @@ class ChangeDatesService {
         return "#content td";
     }
 
+    /**
+     * @return {string}
+     * @private
+     */
     static get _QUERY_FLOATING_DATE () {
         return "#content div[style='float:right']";
     }

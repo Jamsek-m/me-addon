@@ -35,7 +35,7 @@ class DateObject {
 
     /**
      * Builds <tt>DateObject</tt> from string.
-     * @param {string} str String to be parsed. String must be in format 04-Jul-1318, 12:18:24
+     * @param {string} str String to be parsed. String must be in format '04-Jul-1318, 12:18:24'
      * @returns {DateObject}
      */
     static fromString (str) {
@@ -72,7 +72,7 @@ class DateObject {
     }
 
     /**
-     * Converts <tt>DateObject</tt> to string to be displayed in format 04-Jul-1318, 12:18:24
+     * Converts <tt>DateObject</tt> to string to be displayed in format '04-Jul-1318, 12:18:24'
      * @return {string}
      */
     toString () {
@@ -88,7 +88,7 @@ class DateObject {
     }
 
     /**
-     * Converts <tt>DateObject</tt> to string to be displayed in format 12:18:24
+     * Converts <tt>DateObject</tt> to string to be displayed in format '12:18:24'
      * @return {string}
      */
     timeToString() {

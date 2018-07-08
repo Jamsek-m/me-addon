@@ -6,14 +6,14 @@
 class StringUtil {
 
     /**
-     * @param {string} str String to be worked on
+     * @param {string} str String to be worked on.
      */
     constructor(str) {
         this.string = str;
     }
 
     /**
-     * Trims string and removes all breaklines and tabulators
+     * Trims string and removes all newlines and tabulators.
      * @return {StringUtil}
      */
     cleanupString() {
@@ -23,7 +23,7 @@ class StringUtil {
     }
 
     /**
-     * Tests whether given pattern is present in string
+     * Tests whether given pattern is present in string.
      * @param {string} pat Regular expression to be tested
      * @return {boolean}
      */
@@ -37,7 +37,7 @@ class StringUtil {
     }
 
     /**
-     * Extracts pattern from string
+     * Extracts pattern from string.
      * @param {string} pat Regular expression to be tested
      * @return {string}
      */
@@ -55,7 +55,7 @@ class StringUtil {
     }
 
     /**
-     * Replaces pattern in string with given value
+     * Replaces pattern in string with given value.
      * @param {string} pat
      * @param {string} newValue
      */
@@ -64,7 +64,7 @@ class StringUtil {
     }
 
     /**
-     * Returns string that was worked on
+     * Returns string that was worked on.
      * @return {string}
      */
     getString() {
