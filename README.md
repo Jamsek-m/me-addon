@@ -1,4 +1,6 @@
 ﻿# MedievalEurope Time Display Firefox Extension
+ [![GitHub license](https://img.shields.io/github/license/Jamsek-m/me-time-display.svg)](https://github.com/Jamsek-m/me-time-display/blob/master/LICENSE)
+ [![GitHub license](https://img.shields.io/github/downloads/Jamsek-m/me-time-display/total.svg)](https://github.com/Jamsek-m/me-time-display/releases)
 
 Firefox extension that displays all times on medieval-europe.eu in your local timezone.
 
