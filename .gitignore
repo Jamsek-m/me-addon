@@ -1,2 +1,4 @@
 ﻿.idea/
 web-ext-artifacts/
+.web-extension-id
+node_modules/
