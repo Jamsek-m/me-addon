@@ -8,15 +8,17 @@ class ChangeDatesService {
     /**
      * Changes and displays all dates on page.
      */
-    static display() {
-        ChangeDatesService.changeAllTableData();
-        ChangeDatesService.changeDateWhenReadingMessages();
+    static display () {
+        if (!ChangeDatesService._pageIsBlacklisted()) {
+            ChangeDatesService.changeAllTableData();
+            ChangeDatesService.changeDateWhenReadingMessages();
+        }
     }
 
     /**
      * Changes all dates in 'td' tag
      */
-    static changeAllTableData() {
+    static changeAllTableData () {
         const tdElements = ChangeDatesService._selectAllTableDataElements();
         tdElements.forEach(ChangeDatesService._calculateAndReplaceAllDates);
     }
@@ -24,7 +26,7 @@ class ChangeDatesService {
     /**
      * Changes displayed date when reading messages
      */
-    static changeDateWhenReadingMessages() {
+    static changeDateWhenReadingMessages () {
         const dateFieldOnReadMessagePage = document.querySelector("#content div[style='float:right']");
         if (dateFieldOnReadMessagePage) {
             ChangeDatesService._calculateAndReplaceAllDates(dateFieldOnReadMessagePage);
@@ -32,10 +34,23 @@ class ChangeDatesService {
     }
 
     /**
+     * @return {boolean}
+     * @private
+     */
+    static _pageIsBlacklisted () {
+        const url = window.location.href;
+        const matches = BLACKLISTED_URLS.filter(item => {
+            return url.includes(item);
+        });
+        console.log("filtered: ", matches);
+        return matches.length > 0;
+    }
+
+    /**
      * @param {HTMLElement} element
      * @private
      */
-    static _calculateAndReplaceAllDates(element) {
+    static _calculateAndReplaceAllDates (element) {
         const tekst = new StringUtil(element.innerText).cleanupString();
         if (tekst.containsPattern(DATE_PATTERN)) {
             const foundValue = tekst.extractPattern(DATE_PATTERN);
@@ -70,7 +85,7 @@ class ChangeDatesService {
      * @return {HTMLTableDataCellElement[]}
      * @private
      */
-    static _selectAllTableDataElements() {
+    static _selectAllTableDataElements () {
         return Array.from(document.querySelectorAll(ChangeDatesService._QUERY_TD_ELEMS));
     }
 
@@ -78,7 +93,7 @@ class ChangeDatesService {
      * @return {string}
      * @private
      */
-    static get _QUERY_TD_ELEMS() {
+    static get _QUERY_TD_ELEMS () {
         return "#content td";
     }
 

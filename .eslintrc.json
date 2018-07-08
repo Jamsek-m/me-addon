@@ -15,6 +15,7 @@
     "CSS_CLASS_NOT_FOUND": false,
     "CSS_CLASS_FIND_ALL": false,
     "ELEM_ATTR_PREFIX": false,
+    "BLACKLISTED_URLS": false,
     // functions
     "padNumberWithZero": false,
     "getDefaultTimezone": false,

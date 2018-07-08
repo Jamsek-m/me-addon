@@ -17,19 +17,19 @@
         "*://*.medieval-europe.eu/*"
       ],
       "js": [
-        // constants
+        "src/js/env/blacklisted-urls.js",
         "src/js/env/constants.js",
         "src/js/env/timezone.js",
-        // utils and helpers
+
         "src/js/utils/numbers.util.js",
         "src/js/utils/string.util.js",
         "src/js/utils/date.util.js",
-        // services
+
         "src/js/services/store-changed-data.service.js",
         "src/js/services/end-of-action.service.js",
         "src/js/services/main-time-display.service.js",
         "src/js/services/change-dates.service.js",
-        // main
+
         "src/js/index.js"
       ],
       "css": [
